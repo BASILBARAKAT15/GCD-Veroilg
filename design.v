@@ -10,7 +10,7 @@ module Main_Diesign (
 
     wire [4:0] GSD_w;
 
-    // تعريف وحدة ASM
+
     ASM asm_inst (
         .number1(number1),
         .number2(number2),
@@ -20,7 +20,7 @@ module Main_Diesign (
         .GSD(GSD_w)
     );
 
-    // تعريف وحدة BineryTOBCD
+   
     BineryTOBCD bin2bcd_inst (
         .Data(GSD_w),
         .Digit0(Digit0),
