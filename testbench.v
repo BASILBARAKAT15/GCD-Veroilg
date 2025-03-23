@@ -8,7 +8,7 @@ module TB_MainDesign;
     wire [3:0] Digit0;
     wire [3:0] Digit1;
 
-    // استدعاء وحدة التصميم
+   
     Main_Diesign uut (
         .number1(number1),
         .number2(number2),
@@ -19,7 +19,7 @@ module TB_MainDesign;
         .Digit1(Digit1)
     );
 
-    always #5 CLK = ~CLK;  // توليد إشارة الساعة بفترة 10ns
+    always #5 CLK = ~CLK;  
 
     initial begin
         Reset = 1;
